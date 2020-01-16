@@ -190,7 +190,7 @@
 		}
 
 		a:hover {
-			color: #74ffdd;
+			color: #065794;
 		}
 
 	strong, b {
@@ -384,7 +384,7 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ff7496;
+			border-color: #065794;
 		}
 
 	select {
@@ -480,13 +480,13 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			color: #ff7496;
+			color: #065794;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ff7496;
+			border-color: #065794;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -774,7 +774,7 @@
 				}
 
 				ul.icons li a:hover:before {
-					text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+					text-shadow: 1.25px 0px 0px #065794, -1.25px 0px 0px #065794, 0px 1.25px 0px #065794, 0px -1.25px 0px #065794;
 				}
 
 				ul.icons li a:before {
@@ -790,7 +790,7 @@
 				}
 
 				ul.icons li a:hover {
-					border-color: #ff7496;
+					border-color: #065794;
 				}
 
 		@media screen and (max-width: 480px) {
@@ -835,8 +835,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #065794;
+			color: #065794 !important;
 		}
 
 		input[type="submit"].icon,
