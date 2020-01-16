@@ -917,10 +917,9 @@
 		background: #ffffff;
 		border-radius: 4px;
 		cursor: default;
-		max-width: 100%;
+		max-width: 75%;
 		opacity: 0.95;
 		position: relative;
-		width: 27em;
 	}
 	.content{
 		text-align: center;
