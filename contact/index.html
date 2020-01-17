@@ -84,7 +84,7 @@
                 document.getElementById('contact-form').style.display = 'none';
                 document.getElementById('success').style.display = 'block';
             }, (error) => {
-                console.log('FAILED...', error);
+                alert("Woops! It seems that you made a mistake: " +error)
             });;
         });
     }
