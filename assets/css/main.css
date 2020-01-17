@@ -967,7 +967,9 @@
 				z-index: -1;
 				background: #c8cccf;
 			}
-
+		#success{
+			display: none;
+		}
 		@media screen and (max-width: 480px) {
 
 			#main {

@@ -4,6 +4,7 @@
 <head>
     <title>Hugo Blanchard/Contact</title>
     <meta charset="utf-8" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
@@ -18,25 +19,27 @@
         <a href=".."><i class="fas fa-chevron-left"></i>Back</a>
         <header class="content">
             <h2>Contact</h2>
-            <form method="post" action="#">
+            <form id="contact-form">
                 <div class="fields">
                     <div class="field">
-                        <input type="text" name="name" id="name" placeholder="Name" />
+                        <input type="text" name="from_name" id="name" placeholder="Name" />
                     </div>
                     <div class="field">
-                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <input type="email" name="reply_to" id="email" placeholder="Email" />
                     </div>
                     <div class="field">
                         <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
                     </div>
                     <div class="field">
-                        <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+<!--                        <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>-->
+                        <div id="human" class="g-recaptcha" data-sitekey="6LexSdAUAAAAAFS-TviqyLs9UmNsRDjZEaUouU8H">I'm a human</div>
                     </div>
                 </div>
                 <ul class="actions special">
-                    <li><a href="#" class="button">Send</a></li>
+                    <li><input type='submit' class="button"></li>
                 </ul>
             </form>
+                <div id="success" class="button">Mail sent!</div>
         </header>
         <footer class="content">
 <!--            <ul class="icons">-->
@@ -65,6 +68,26 @@
     if ('addEventListener' in window) {
         window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init('user_fNGiwhy2xKMtfJ6obKZTk');
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('gmail', 'template_rj4xmUUz', this).then((response) => {
+                console.log('SUCCESS!', response);
+                document.getElementById('contact-form').style.display = 'none';
+                document.getElementById('success').style.display = 'block';
+            }, (error) => {
+                console.log('FAILED...', error);
+            });;
+        });
     }
 </script>
 
