@@ -929,9 +929,15 @@
 		background: #ffffff;
 		border-radius: 4px;
 		cursor: default;
-		max-width: 75%;
 		opacity: 0.95;
 		position: relative;
+	}
+	#main .about {
+		max-width: 75%;
+	}
+	#main .normal {
+		max-width: 100%;
+		width: 27em;
 	}
 	.content{
 		text-align: center;
