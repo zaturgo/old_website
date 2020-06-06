@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://hblanchard.works/</loc>
+	<lastmod>2020-06-06T15:51:54+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/CV-EN.pdf</loc>
+	<lastmod>2020-06-06T15:51:55+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/about/</loc>
+	<lastmod>2020-06-06T15:51:59+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/contact/</loc>
+	<lastmod>2020-06-06T15:52:00+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/fr/</loc>
+	<lastmod>2020-06-06T15:52:01+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/CV.pdf</loc>
+	<lastmod>2020-06-06T15:52:03+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/fr/about/</loc>
+	<lastmod>2020-06-06T15:52:01+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://hblanchard.works/fr/contact/</loc>
+	<lastmod>2020-06-06T15:52:01+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+</urlset>
