@@ -1,53 +1,59 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Hugo Blanchard</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload fondNormal">
+<head>
+    <title>Hugo Blanchard</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload fondNormal">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Main -->
-					<section id="main" class="content normal">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Hugo Blanchard</h1>
-							<p>Full stack web developper</p>
-							<p>Student in I.T. engineering</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://twitter.com/hblanchard_pro" class="icon brands fa-twitter"></a></li>
-								<li><a href="https://linkedin.com/in/hugo-b-ba7872138/" class="icon brands fa-linkedin-in"></a></li>
-								<li><a title="GitHub" href="https://github.com/zaturgo" class="icon brands fa-github"></a></li>
-								<li><a title="GitLab" href="https://gitlab.com/zaturgo" class="icon brands fa-gitlab"></a></li>
-							</ul>
-							<hr/>
-							<a href="CV_EN.pdf" download>Curriculum Vitae</a> | <a href="/about">About me</a><br/> <a href="/contact">Contact</a>
-						</footer>
-					</section>
+    <!-- Main -->
+    <section id="main" class="content normal">
+        <header>
+            <span class="avatar"><img src="images/avatar.jpg" alt=""/></span>
+            <h1>Hugo Blanchard</h1>
+            <p>Full stack web developper</p>
+            <p>Student in I.T. engineering</p>
+        </header>
+        <footer>
+            <ul class="icons">
+                <li><a href="https://twitter.com/hblanchard_pro" class="icon brands fa-twitter"></a></li>
+                <li><a href="https://linkedin.com/in/hugo-b-ba7872138/" class="icon brands fa-linkedin-in"></a></li>
+                <li><a title="GitHub" href="https://github.com/zaturgo" class="icon brands fa-github"></a></li>
+                <li><a title="GitLab" href="https://gitlab.com/zaturgo" class="icon brands fa-gitlab"></a></li>
+            </ul>
+            <hr/>
+            <a href="CV-EN.pdf" download>Curriculum Vitae</a> | <a href="/about">About me</a><br/> <a href="/contact">Contact</a>
+        </footer>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Hugo Blanchard</li><li>2020</li><li><a href="/fr">🇫🇷</a></li>
-						</ul>
-					</footer>
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>&copy; Hugo Blanchard</li>
+            <li>2020</li>
+            <li><a href="/fr">🇫🇷</a></li>
+            <li><a href="https://www.mon-cocon.com/le-mug-chauffant-pour-rechauffer-les-plus-frileux/">Actus Mug Chauffant</a></li>
+        </ul>
+    </footer>
+</div>
 
-			</div>
+<!-- Scripts -->
+<script>
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function () {
+            document.body.className = document.body.className.replace(/\bis-preload\b/, '');
+        });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+</script>
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+</body>
 </html>
